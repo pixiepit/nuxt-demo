@@ -38,6 +38,8 @@ export default {
     '@nuxtjs/tailwindcss',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://https://image.nuxtjs.org/
+    '@nuxt/image'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
