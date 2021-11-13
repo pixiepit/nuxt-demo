@@ -17,9 +17,10 @@ The following links are helpful for the content that we will cover today
 - [Nuxt Navigation Gist](https://gist.github.com/lilyx13/3ae4627f079929978634d9d84b776f35)
 - [Nuxt Setup Gist](https://gist.github.com/lilyx13/db43759b547b7cf909d4167d0577d482)
 - [Nuxt Project Structure Gist](https://gist.github.com/lilyx13/4c973750fb63713d04f7d2f64fa20223)
+
 ## Next Steps
 After completing this, try setting up a CMS backend and attaching it to your Nuxt frontent. I recommend using [Strapi](https://strapi.io) or [Storyblok](https://storyblok.com). Note that strapi is open source and self hosted and storyblok is not.
-
+- Check out [the nuxt pages documentation](https://nuxtjs.org/docs/directory-structure/pages) for information on creating dynamic pages using async functions and a slug page.
 - For this you will want to look into using either apollo or axios to connect the front to backend
 
 
