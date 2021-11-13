@@ -1,29 +1,45 @@
 <template>
-  <section>
+  <div>
     <h1>Super Team</h1>
-    <figure>
-      <nuxt-img src="/assets/andrea-pic.jpg" alt="Andrea" width="300" />
-      <figcaption>Andrea is a cool person.</figcaption>
-    </figure>
-    <figure>
-      <nuxt-img src="/assets/anthony-pic.jpg" alt="Anthony" width="300" />
-      <figcaption>Super duper anthony person.</figcaption>
-    </figure>
-    <figure>
-      <nuxt-img
-        src="/assets/italo-pic.jpg"
-        alt="Italo"
-        width="300"
-        quality="10"
+    <section class="container mx-auto flex flex-wrap justify-center gap-4">
+      <Card v-for="(member, index) in members" 
+        :key="index" 
+        :image="member.image" 
+        :name="member.name" 
+        :bio="member.bio" 
       />
-      <figcaption>Italo! Italo! Italo!</figcaption>
-    </figure>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      members: [
+        {
+          name: 'Andrea',
+          image: '/assets/andrea-pic.jpg',
+          bio: 'Andrea is a cool person, apparently.'
+        },
+        {
+          name: 'Anthony',
+          image: '/assets/anthony-pic.jpg',
+          bio: 'Super duper cool Anth.'
+        },
+        {
+          name: 'Italo',
+          image: '/assets/italo-pic.jpg',
+          bio: 'Italo! Italo! Italo!'
+        }
+      ]
+    }
+  }
+}
 </script>
 
-<style lang="scss">
+<style>
+  figcaption {
+    @apply text-center text-lg
+  }
 </style>
